@@ -8,7 +8,7 @@ const app = express();
 /*Conexao com o MongoDB*/
 (async () => {
   try {
-    await mongoose.connect('mongodb+srv://igti_rei:110410@cluster0.uber5.mongodb.net/my-bank-api?authSource=admin&replicaSet=atlas-m485x1-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true',
+    
     //   'mongodb+srv://' +
     //     process.env.USERDB +
     //     ':' +
