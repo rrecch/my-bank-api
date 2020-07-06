@@ -24,7 +24,10 @@ const app = express();
   }
 })();
 
+/*usando o express*/
+//app.put.apply.apply.apply
 app.use(express.json());
+/*usando a rota*/
 app.use(accountsRouter);
 
 app.listen(3001, () => console.log('Servidor em execucao'));
