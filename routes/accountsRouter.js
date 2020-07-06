@@ -4,6 +4,19 @@ import { accounts } from '../models/accounts.js'
 const app = express()
 
 
+app.test('/testandobranch/:ag/:cc', async (req, res) => {
+
+  try {
+    const filter = {agencia: req.params.ag, conta: req.params.cc}
+    const account = await accounts.find(filter)
+
+    res.send(account)
+  } catch (err) {
+    res.status(500).send(err)
+  }
+})
+
+
 app.get('/accounts/:ag/:cc', async (req, res) => {
 
   try {
